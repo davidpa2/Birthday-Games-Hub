@@ -19,8 +19,8 @@ function Landing() {
                     gyroControls: false,
                     minHeight: 200.0,
                     minWidth: 200.0,
-                    sunlightColor: 0xff,
-                    sunGlareColor: 0xa0c2bf,
+                    sunlightColor: 'fff',
+                    sunGlareColor: 'fff',
                 }),
             );
         }
@@ -31,7 +31,7 @@ function Landing() {
     }, [vantaEffect]);
 
     return (
-        <div ref={myRef}>
+        <div ref={myRef} style={{width: '100vw', height: '100vh', position: 'absolute',  top: '0', left: '0'}}>
             {/* <div style={{
                 position: 'absolute',
                 top: '50%',
