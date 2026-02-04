@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import * as THREE from "three"; // Vanta suele necesitar Three.js
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-expect-error
 import CLOUDS from 'vanta/dist/vanta.clouds.min';
 
@@ -18,6 +19,8 @@ function Landing() {
                     gyroControls: false,
                     minHeight: 200.0,
                     minWidth: 200.0,
+                    sunlightColor: 0xff,
+                    sunGlareColor: 0xa0c2bf,
                 }),
             );
         }
@@ -28,8 +31,8 @@ function Landing() {
     }, [vantaEffect]);
 
     return (
-        <div ref={myRef} style={{ height: "100vh", width: "100%" }}>
-            <div style={{
+        <div ref={myRef}>
+            {/* <div style={{
                 position: 'absolute',
                 top: '50%',
                 left: '50%',
@@ -40,7 +43,7 @@ function Landing() {
             }}>
                 <h1>Birthday Games Hub</h1>
                 <p>Una experiencia estética para tus juegos</p>
-            </div>
+            </div> */}
         </div>
     );
 }
