@@ -3,3 +3,18 @@ html {
     background: #ffffff;
     background: linear-gradient(186deg, rgb(204, 222, 255) 0%, rgb(107, 185, 200) 100%);
 }
+
+button {
+    border-radius: 8px;
+    transition: all 0.3s;
+    cursor: pointer;
+    /* background: #969696; */
+    font-size: 1.2em;
+    font-weight: 550;
+    opacity: 0.8;
+}
+
+button:hover {
+    background: #919191;
+    color: white;
+}
