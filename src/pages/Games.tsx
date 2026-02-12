@@ -1,5 +1,39 @@
 import React from 'react'
 
+interface Game {
+  name: string,
+  description: string,
+  image: string,
+  url: string
+}
+
+const gamesArray: Game[] = [
+  {
+    name: "Cakes",
+    description: "¡Toca todas las taras para llegar hasta 34!",
+    image: "",
+    url: "https://davidpa2.github.io/cakes/"
+  },
+  {
+    name: "Cake Fall",
+    description: "¡Recoge las tartas y esquiva las nubes hasta llegar a 35!",
+    image: "",
+    url: "https://davidpa2.github.io/CakeFall/"
+  },
+  {
+    name: "Cake Drive",
+    description: "¡Conduce hasta entre obstáculos y a través de las curvas hasta alcanzar 36 tartas!",
+    image: "src/assets/36.png",
+    url: "https://davidpa2.github.io/CakeDrive/"
+  },
+  {
+    name: "Cake Operation",
+    description: "¡Toca las tartas realizando operaciones hasta llegar a 37!",
+    image: "",
+    url: "https://davidpa2.github.io/CakeOperation/"
+  }
+]
+
 const Games = () => {
   return (
     <div className="w-96 h-110 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
