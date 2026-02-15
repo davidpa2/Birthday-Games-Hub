@@ -11,13 +11,13 @@ const gamesArray: Game[] = [
   {
     name: "Cakes",
     description: "¡Toca todas las taras para llegar hasta 34!",
-    image: "src/assets/36.png",
+    image: "src/assets/34.png",
     url: "https://davidpa2.github.io/cakes/"
   },
   {
     name: "Cake Fall",
     description: "¡Recoge las tartas y esquiva las nubes hasta llegar a 35!",
-    image: "src/assets/36.png",
+    image: "src/assets/35.png",
     url: "https://davidpa2.github.io/CakeFall/"
   },
   {
@@ -29,7 +29,7 @@ const gamesArray: Game[] = [
   {
     name: "Cake Operation",
     description: "¡Toca las tartas realizando operaciones hasta llegar a 37!",
-    image: "src/assets/36.png",
+    image: "src/assets/37.png",
     url: "https://davidpa2.github.io/CakeOperation/"
   }
 ]
