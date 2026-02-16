@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Pangolin';
+    src: url('assets/fonts/Pangolin-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@theme {
+    --font-display: "Pangolin", sans-serif;
+}
