@@ -10,25 +10,25 @@ interface Game {
 const gamesArray: Game[] = [
   {
     name: "Cakes",
-    description: "¡Toca todas las taras para llegar hasta 34!",
+    description: "¡Toca todas las tartas que se mueven por la pantalla para llegar hasta 34!",
     image: "src/assets/34.png",
     url: "https://davidpa2.github.io/cakes/"
   },
   {
     name: "Cake Fall",
-    description: "¡Recoge las tartas y esquiva las nubes hasta llegar a 35!",
+    description: "¡Recoge las tartas y que no te alcancen las nubes hasta llegar a 35!",
     image: "src/assets/35.png",
     url: "https://davidpa2.github.io/CakeFall/"
   },
   {
     name: "Cake Drive",
-    description: "¡Conduce hasta entre obstáculos y a través de las curvas hasta alcanzar 36 tartas!",
+    description: "¡Conduce entre obstáculos y a través de las curvas hasta alcanzar 36 tartas!",
     image: "src/assets/36.png",
     url: "https://davidpa2.github.io/CakeDrive/"
   },
   {
     name: "Cake Operation",
-    description: "¡Toca las tartas realizando operaciones hasta llegar a 37!",
+    description: "¡Toca las tartas que bajan realizando operaciones hasta llegar a 37!",
     image: "src/assets/37.png",
     url: "https://davidpa2.github.io/CakeOperation/"
   }
@@ -39,7 +39,7 @@ const Games = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center'>
       {
         gamesArray.map(game => 
-          <div className="w-96 h-110 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
+          <div className="w-96 h-96 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
 
             <img src={game.image} alt="" className='w-80' />
 
