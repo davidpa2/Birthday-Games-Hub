@@ -36,7 +36,7 @@ const gamesArray: Game[] = [
 
 const Games = () => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center my-20'>
       {
         gamesArray.map(game => 
           <div className="w-96 h-96 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
