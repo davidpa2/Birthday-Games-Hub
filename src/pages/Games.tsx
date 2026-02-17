@@ -1,4 +1,8 @@
 // import React from 'react'
+import img34 from "../assets/34.png";
+import img35 from "../assets/35.png";
+import img36 from "../assets/36.png";
+import img37 from "../assets/37.png";
 
 interface Game {
   name: string,
@@ -11,25 +15,25 @@ const gamesArray: Game[] = [
   {
     name: "Cakes",
     description: "¡Toca todas las tartas que se mueven por la pantalla para llegar hasta 34!",
-    image: "src/assets/34.png",
+    image: img34,
     url: "https://davidpa2.github.io/cakes/"
   },
   {
     name: "Cake Fall",
     description: "¡Recoge las tartas y que no te alcancen las nubes hasta llegar a 35!",
-    image: "src/assets/35.png",
+    image: img35,
     url: "https://davidpa2.github.io/CakeFall/"
   },
   {
     name: "Cake Drive",
     description: "¡Conduce entre obstáculos y a través de las curvas hasta alcanzar 36 tartas!",
-    image: "src/assets/36.png",
+    image: img36,
     url: "https://davidpa2.github.io/CakeDrive/"
   },
   {
     name: "Cake Operation",
     description: "¡Toca las tartas que bajan realizando operaciones hasta llegar a 37!",
-    image: "src/assets/37.png",
+    image: img37,
     url: "https://davidpa2.github.io/CakeOperation/"
   }
 ]
