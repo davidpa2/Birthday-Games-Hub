@@ -43,9 +43,9 @@ const Games = () => {
     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center my-20'>
       {
         gamesArray.map(game => 
-          <div className="w-96 h-96 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
+          <div className="w-96 h-100 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
 
-            <img src={game.image} alt="" className='w-80' />
+            <img src={game.image} alt="" className='w-80 mt-6' />
 
             <h1 className='mb-2 mt-4 text-2xl font-semibold tracking-tight text-heading text-white'>{game.name}</h1>
 
