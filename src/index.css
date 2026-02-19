@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     background: linear-gradient(186deg, rgb(204, 222, 255) 0%, rgb(107, 185, 200) 100%);
 }
 
@@ -15,4 +16,24 @@ button {
 button:hover {
     background: #919191;
     color: white;
+}
+
+.cloud {
+    margin-top: -25px;
+    width: 130px;
+    top: 35px;
+    right: 50px;
+    z-index: 999;
+    text-align: right;
+    font-family: 'IndieFlower', sans-serif;
+    font-weight: 800;
+    position: relative;
+    rotate: -5deg;
+    animation: beat 1s infinite alternate;
+}
+
+@keyframes beat {
+    to {
+        transform: scale(1.3);
+    }
 }
