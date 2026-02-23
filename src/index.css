@@ -27,9 +27,21 @@ button:hover {
     text-align: right;
     font-family: 'IndieFlower', sans-serif;
     font-weight: 800;
-    position: relative;
-    rotate: -5deg;
+    position: absolute;
+    rotate: -15deg;
     animation: beat 1s infinite alternate;
+    top: -10%;
+    left: -40px;
+    
+    .cloudImage {
+        top: -100%;
+        left: -40px;
+    }
+    
+    /* .gameNumber {
+        top: -60%;
+        left: -40px;
+    } */
 }
 
 @keyframes beat {

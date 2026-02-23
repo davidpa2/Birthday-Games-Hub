@@ -6,6 +6,7 @@ import img36 from "../assets/36.png";
 import img37 from "../assets/37.png";
 
 interface Game {
+  number: number,
   name: string,
   description: string,
   image: string,
@@ -14,24 +15,28 @@ interface Game {
 
 const gamesArray: Game[] = [
   {
+    number: 34,
     name: "Cakes",
     description: "¡Toca todas las tartas que se mueven por la pantalla para llegar hasta 34!",
     image: img34,
     url: "https://davidpa2.github.io/cakes/"
   },
   {
+    number: 35,
     name: "Cake Fall",
     description: "¡Recoge las tartas y que no te alcancen las nubes hasta llegar a 35!",
     image: img35,
     url: "https://davidpa2.github.io/CakeFall/"
   },
   {
+    number: 36,
     name: "Cake Drive",
     description: "¡Conduce entre obstáculos y a través de las curvas hasta alcanzar 36 tartas!",
     image: img36,
     url: "https://davidpa2.github.io/CakeDrive/"
   },
   {
+    number: 37,
     name: "Cake Operation",
     description: "¡Toca las tartas que bajan realizando operaciones hasta llegar a 37!",
     image: img37,
@@ -45,8 +50,11 @@ const Games = () => {
       {
         gamesArray.map(game =>
           <>
-            <div className="w-96 h-100 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
-              <img src={cloud} alt="cloud image" className="cloud" />
+            <div className="relative w-96 h-100 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
+            <div className="cloud" >
+              <img src={cloud} alt="cloud image" className="cloudImage"/>
+              <span className="gameNumber">{game.number}</span>
+            </div>
 
               <img src={game.image} alt="" className='w-80 mt-6' />
 
