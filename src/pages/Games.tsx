@@ -1,4 +1,5 @@
 // import React from 'react'
+import { useNavigate } from "react-router-dom";
 import cloud from "../assets/cloud.png";
 import img34 from "../assets/34.png";
 import img35 from "../assets/35.png";
@@ -45,6 +46,13 @@ const gamesArray: Game[] = [
 ]
 
 const Games = () => {
+  const navigate = useNavigate();
+
+  const openGame = (name: string, url: string) => {
+    // Navegamos pasando un objeto de estado
+    navigate('/game-frame', { state: { gameName: name, url: url } });
+  };
+
   return (
     <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center my-20'>
       {
@@ -64,7 +72,7 @@ const Games = () => {
 
               <div className='w-full flex justify-center mt-3'>
                 <button className='text-center ring-3 text-white w-26 h-9' onClick={() => {
-                  window.location.href = game.url; console.log("aaaaaaaa");
+                  openGame(game.name, game.url);
                 }}>
                   <div className='flex'>
                     <svg className="w-7 h-7 mt-0.5 mx-1 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
