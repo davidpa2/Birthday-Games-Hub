@@ -56,7 +56,7 @@ const Games = () => {
   return (
     <div className="w-full h-screen pb-5">
       <header>
-        <h1 className="font-[Alphasmoke] font-medium text-white text-shadow-lg/50 text-6xl ml-7 mt-6">Birthday Games Hub</h1>
+        <h1 className="font-[Alphasmoke] font-medium text-white text-shadow-lg/50 text-6xl ml-7 mt-6 animate-pulse">Birthday Games Hub</h1>
       </header>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-15'>
         {
