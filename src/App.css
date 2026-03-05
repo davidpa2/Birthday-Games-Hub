@@ -10,3 +10,14 @@
 @theme {
     --font-display: "Pangolin", sans-serif;
 }
+
+@font-face {
+    font-family: 'Alphasmoke';
+    src: url('assets/fonts/Alphasmoke-OOX6.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@theme {
+    --font-display: "Alphasmoke", sans-serif;
+}
