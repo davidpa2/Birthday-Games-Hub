@@ -5,6 +5,7 @@ import img34 from "../assets/34.png";
 import img35 from "../assets/35.png";
 import img36 from "../assets/36.png";
 import img37 from "../assets/37.png";
+import { FaGithub } from "react-icons/fa";
 
 interface Game {
   number: number,
@@ -90,6 +91,21 @@ const Games = () => {
             </>
           )}
       </div>
+
+      <footer className="w-full h-28 grid-cols-2 md:grid-cols-3 relative">
+        <div className="cloud" >
+          <img src={cloud} alt="cloud image" className="cloudImage" />
+          <span className="gameNumber"><FaGithub></FaGithub></span>
+        </div>
+        <div className="cloud">
+          <img src={cloud} alt="cloud image" className="cloudImage" />
+          <span className="gameNumber"><FaGithub></FaGithub></span>
+        </div>
+        <div className="cloud">
+          <img src={cloud} alt="cloud image" className="cloudImage" />
+          <span className="gameNumber"><FaGithub></FaGithub></span>
+        </div>
+      </footer>
     </div>
   )
 }
