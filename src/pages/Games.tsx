@@ -54,7 +54,7 @@ const Games = () => {
   };
 
   return (
-    <div className="w-full h-screen pb-5">
+    <div className="w-full h-full pb-5">
       <header>
         <h1 className="font-[CloudsOfHope] font-medium text-white text-shadow-lg/50 text-6xl ml-7 mt-6 animate-pulse">Birthday Games Hub</h1>
       </header>
