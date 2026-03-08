@@ -21,3 +21,14 @@
 @theme {
     --font-display: "Alphasmoke", sans-serif;
 }
+
+@font-face {
+    font-family: 'CloudsOfHope';
+    src: url('assets/fonts/CloudsOfHopeLsf-xoY0.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@theme {
+    --font-display: "CloudsOfHope", sans-serif;
+}
