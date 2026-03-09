@@ -5,7 +5,7 @@ import img34 from "../assets/34.png";
 import img35 from "../assets/35.png";
 import img36 from "../assets/36.png";
 import img37 from "../assets/37.png";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 interface Game {
   number: number,
@@ -92,19 +92,15 @@ const Games = () => {
           )}
       </div>
 
-      <footer className="w-full h-28 grid-cols-2 md:grid-cols-3 relative">
-        <div className="cloud" >
-          <img src={cloud} alt="cloud image" className="cloudImage" />
-          <span className="gameNumber"><FaGithub></FaGithub></span>
-        </div>
-        <div className="cloud">
-          <img src={cloud} alt="cloud image" className="cloudImage" />
-          <span className="gameNumber"><FaGithub></FaGithub></span>
-        </div>
-        <div className="cloud">
-          <img src={cloud} alt="cloud image" className="cloudImage" />
-          <span className="gameNumber"><FaGithub></FaGithub></span>
-        </div>
+      <footer className="w-full h-28 grid grid-cols-2 md:grid-cols-3 place-items-center mt-10">
+        <a className="animate-pulse relative" href="https://github.com/davidpa2" >
+          <img src={cloud} alt="cloud image" className="w-24" />
+          <span className="text-3xl stroke-red-500 absolute top-1/3 left-1/3"><FaGithub></FaGithub></span>
+        </a>
+        <a className="animate-pulse relative" href="https://www.linkedin.com/in/davidpadillaaguilera/">
+          <img src={cloud} alt="cloud image" className="w-24" />
+          <span className="text-3xl stroke-red-500 absolute top-1/3 left-1/3"><FaLinkedin></FaLinkedin></span>
+        </a>
       </footer>
     </div>
   )
