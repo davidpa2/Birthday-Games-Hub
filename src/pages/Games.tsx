@@ -90,7 +90,7 @@ const Games = () => {
           )}
       </div>
 
-      <footer className="w-full h-28 grid grid-cols-2 md:grid-cols-3 place-items-center mt-10">
+      <footer className="w-full h-28 grid grid-cols-2 place-items-center mt-10">
         <a className="animate-pulse relative" href="https://github.com/davidpa2" >
           <img src={cloud} alt="cloud image" className="w-24" />
           <span className="text-3xl absolute top-1/3 left-1/3"><FaGithub></FaGithub></span>
