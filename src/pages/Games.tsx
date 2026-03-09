@@ -5,6 +5,7 @@ import img34 from "../assets/34.png";
 import img35 from "../assets/35.png";
 import img36 from "../assets/36.png";
 import img37 from "../assets/37.png";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 interface Game {
   number: number,
@@ -54,37 +55,53 @@ const Games = () => {
   };
 
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center my-20'>
-      {
-        gamesArray.map(game =>
-          <>
-            <div className="relative w-96 h-100 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
-            <div className="cloud" >
-              <img src={cloud} alt="cloud image" className="cloudImage"/>
-              <span className="gameNumber">{game.number}</span>
-            </div>
+    <div className="w-full h-full pb-5">
+      <header>
+        <h1 className="font-[CloudsOfHope] font-medium text-white text-shadow-lg/50 text-6xl ml-7 mt-6 animate-pulse">Birthday Games Hub</h1>
+      </header>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center mt-15'>
+        {
+          gamesArray.map(game =>
+            <>
+              <div className="relative w-96 h-100 border-white border-3 rounded-xl shadow-xl bg-gray-800/5 flex flex-col items-center">
+                <div className="cloud" >
+                  <img src={cloud} alt="cloud image" className="cloudImage" />
+                  <span className="gameNumber">{game.number}</span>
+                </div>
 
-              <img src={game.image} alt="" className='w-80 mt-6' />
+                <img src={game.image} alt="" className='w-80 mt-6' />
 
-              <h1 className='mb-2 mt-4 text-2xl font-semibold tracking-tight text-heading text-white'>{game.name}</h1>
+                <h1 className='mb-2 mt-4 text-2xl font-semibold tracking-tight text-heading text-white'>{game.name}</h1>
 
-              <p className='text-white text-center p-2'>{game.description}</p>
+                <p className='text-white text-center p-2'>{game.description}</p>
 
-              <div className='w-full flex justify-center mt-3'>
-                <button className='text-center ring-3 text-white w-26 h-9' onClick={() => {
-                  openGame(game.name, game.url);
-                }}>
-                  <div className='flex'>
-                    <svg className="w-7 h-7 mt-0.5 mx-1 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                      <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.875 1.25 3.875 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.155-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z" />
-                    </svg>
-                    ¡Jugar!
-                  </div>
-                </button>
+                <div className='w-full flex justify-center mt-3'>
+                  <button className='text-center ring-3 text-white w-26 h-9' onClick={() => {
+                    openGame(game.name, game.url);
+                  }}>
+                    <div className='flex'>
+                      <svg className="w-7 h-7 mt-0.5 mx-1 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 21v-9m3-4H7.5a2.5 2.5 0 1 1 0-5c1.5 0 2.875 1.25 3.875 2.5M14 21v-9m-9 0h14v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8ZM4 8h16a1 1 0 0 1 1 1v3H3V9a1 1 0 0 1 1-1Zm12.155-5c-3 0-5.5 5-5.5 5h5.5a2.5 2.5 0 0 0 0-5Z" />
+                      </svg>
+                      ¡Jugar!
+                    </div>
+                  </button>
+                </div>
               </div>
-            </div>
-          </>
-        )}
+            </>
+          )}
+      </div>
+
+      <footer className="w-full h-28 grid grid-cols-2 md:grid-cols-3 place-items-center mt-10">
+        <a className="animate-pulse relative" href="https://github.com/davidpa2" >
+          <img src={cloud} alt="cloud image" className="w-24" />
+          <span className="text-3xl stroke-red-500 absolute top-1/3 left-1/3"><FaGithub></FaGithub></span>
+        </a>
+        <a className="animate-pulse relative" href="https://www.linkedin.com/in/davidpadillaaguilera/">
+          <img src={cloud} alt="cloud image" className="w-24" />
+          <span className="text-3xl stroke-red-500 absolute top-1/3 left-1/3"><FaLinkedin></FaLinkedin></span>
+        </a>
+      </footer>
     </div>
   )
 }
