@@ -9,8 +9,8 @@ const GameFrame = () => {
     return (
         <div className="w-full h-screen flex flex-col items-center justify-end">
             <header className='w-full sm:w-[80vh] md:w-[70vh] lg:w-[60vh] grid grid-cols-[20%_80%]'>
-                <FaArrowLeft className='text-4xl ml-3 flex self-center justify-end cursor-pointer' onClick={() => navigate("/games")}/>
-                <h1 className="text-center mr-5 py-4 text-4xl flex justify-end">{gameName}</h1>
+                <FaArrowLeft className='text-4xl text-white text-shadow-lg/50 ml-3 flex self-center justify-end cursor-pointer' onClick={() => navigate("/games")}/>
+                <h1 className="text-center font-[CloudsOfHope] text-white text-shadow-lg/50 mr-5 py-4 text-4xl flex justify-end">{gameName}</h1>
             </header>
             <iframe 
                 src={url} 
